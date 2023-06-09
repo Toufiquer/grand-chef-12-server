@@ -1,0 +1,150 @@
+{
+  "marvel": [
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Iron_Man_Mark_VIII_Armor.jpg/220px-Iron_Man_Mark_VIII_Armor.jpg",
+      "name": "Iron Man Mark VIII",
+      "price": 24.99,
+      "rating": 4.5,
+      "description": "The Iron Man Mark VIII is a high-tech armored suit worn by Tony Stark. It is one of the most advanced suits in Stark's arsenal, and it features a variety of weapons and gadgets. The Mark VIII is also very durable, and it can withstand a great deal of damage."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Captain_America_Civil_War_-_Winter_Soldier_figure.jpg/220px-Captain_America_Civil_War_-_Winter_Soldier_figure.jpg",
+      "name": "Winter Soldier",
+      "price": 19.99,
+      "rating": 4.2,
+      "description": "The Winter Soldier is a super soldier assassin who was brainwashed by Hydra. He is a skilled fighter and a deadly marksman. The Winter Soldier is also equipped with a variety of weapons, including a metal arm, a cybernetic eye, and a grappling hook."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Hulk_%282008_film%29_by_Mattel.jpg/220px-Hulk_%282008_film%29_by_Mattel.jpg",
+      "name": "Hulk",
+      "price": 29.99,
+      "rating": 4.8,
+      "description": "The Hulk is a gamma-powered superhero who is known for his incredible strength and rage. He is a force to be reckoned with, and he is always ready to fight for what he believes in."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Thor_%282011_film%29_figure.jpg/220px-Thor_%282011_film%29_figure.jpg",
+      "name": "Thor",
+      "price": 22.99,
+      "rating": 4.6,
+      "description": "Thor is the Asgardian god of thunder. He is a powerful warrior and a skilled leader. Thor is also a wise and compassionate man, and he is always willing to help those in need."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Black_Widow_figure.jpg/220px-Black_Widow_figure.jpg",
+      "name": "Black Widow",
+      "price": 17.99,
+      "rating": 4.3,
+      "description": "Black Widow is a highly skilled spy and assassin. She is an expert in martial arts, and she is also an expert in firearms and explosives. Black Widow is a valuable member of the Avengers, and she is always ready to fight for what she believes in."
+    }
+  ],
+  "star_wars": [
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Darth_Vader_figure.jpg/220px-Darth_Vader_figure.jpg",
+      "name": "Darth Vader",
+      "price": 24.99,
+      "rating": 4.5,
+      "description": "Darth Vader is the Dark Lord of the Sith. He is a powerful and feared figure, and he is a major antagonist in the Star Wars saga. Vader is a skilled fighter and a master of the Force. He is also a ruthless and cunning leader, and he will stop at nothing to achieve his goals."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Luke_Skywalker_figure.jpg/220px-Luke_Skywalker_figure.jpg",
+      "name": "Luke Skywalker",
+      "price": 19.99,
+      "rating": 4.2,
+      "description": "Luke Skywalker is a young hero who is destined to become a Jedi Knight. He is a skilled pilot and a powerful Force user. Luke is also a compassionate and caring person, and he is always willing to help those in need."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Han_Solo_figure.jpg/220px-Han_Solo_figure.jpg",
+      "name": "Han Solo",
+      "price": 29.99,
+      "rating": 4.8,
+      "description": "Han Solo is a smuggler and a scoundrel. He is a skilled pilot and a quick-draw artist. Han is also a loyal friend and a brave hero, and he is always willing to fight for what he believes in."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Princess_Leia_figure.jpg/220px-Princess_Leia_figure.jpg",
+      "name": "Princess Leia",
+      "price": 22.99,
+      "rating": 4.6,
+      "description": "Princess Leia is a leader of the Rebel Alliance. She is a skilled diplomat and a brilliant strategist. Leia is also a compassionate and caring person, and she is always willing to fight for what she believes in."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Chewbacca_figure.jpg/220px-Chewbacca_figure.jpg",
+      "name": "Chewbacca",
+      "price": 17.99,
+      "rating": 4.3,
+      "description": "Chewbacca is a Wookiee and a loyal friend of Han Solo. He is a skilled warrior and a powerful ally. Chewbacca is also a compassionate and caring person, and he is always willing to help those in need."
+    }
+  ],
+  "avengers": [
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Avengers_Assemble_poster.jpg/220px-Avengers_Assemble_poster.jpg",
+      "name": "Avengers Assemble",
+      "price": 49.99,
+      "rating": 5.0,
+      "description": "The Avengers Assemble action figure set includes six iconic Avengers characters: Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye. The figures are highly detailed and poseable, and they come with a variety of accessories, including weapons, gadgets, and vehicles. The Avengers Assemble action figure set is the perfect gift for any fan of the Marvel Cinematic Universe."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Avengers_Endgame_poster.jpg/220px-Avengers_Endgame_poster.jpg",
+      "name": "Avengers Endgame",
+      "price": 59.99,
+      "rating": 4.9,
+      "description": "The Avengers Endgame action figure set includes six iconic Avengers characters from the final film in the Marvel Cinematic Universe: Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye. The figures are highly detailed and poseable, and they come with a variety of accessories, including weapons, gadgets, and vehicles. The Avengers Endgame action figure set is the perfect gift for any fan of the Marvel Cinematic Universe."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Avengers_Infinity_War_poster.jpg/220px-Avengers_Infinity_War_poster.jpg",
+      "name": "Avengers Infinity War",
+      "price": 54.99,
+      "rating": 4.8,
+      "description": "The Avengers Infinity War action figure set includes six iconic Avengers characters from the film: Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye. The figures are highly detailed and poseable, and they come with a variety of accessories, including weapons, gadgets, and vehicles. The Avengers Infinity War action figure set is the perfect gift for any fan of the Marvel Cinematic Universe."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Avengers_Age_of_Ultron_poster.jpg/220px-Avengers_Age_of_Ultron_poster.jpg",
+      "name": "Avengers Age of Ultron",
+      "price": 49.99,
+      "rating": 4.7,
+      "description": "The Avengers Age of Ultron action figure set includes six iconic Avengers characters from the film: Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye. The figures are highly detailed and poseable, and they come with a variety of accessories, including weapons, gadgets, and vehicles. The Avengers Age of Ultron action figure set is the perfect gift for any fan of the Marvel Cinematic Universe."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Avengers_(2012_film)_poster.jpg/220px-Avengers_(2012_film)_poster.jpg",
+      "name": "Avengers",
+      "price": 44.99,
+      "rating": 4.6,
+      "description": "The Avengers action figure set includes six iconic Avengers characters from the first film: Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye. The figures are highly detailed and poseable, and they come with a variety of accessories, including weapons, gadgets, and vehicles. The Avengers action figure set is the perfect gift for any fan of the Marvel Cinematic Universe."
+    }
+  ],
+  "transformers": [
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Optimus_Prime_%28Movie%29_figure.jpg/220px-Optimus_Prime_%28Movie%29_figure.jpg",
+      "name": "Optimus Prime",
+      "price": 24.99,
+      "rating": 4.5,
+      "description": "Optimus Prime is the leader of the Autobots. He is a powerful and wise leader, and he is always willing to fight for what he believes in. Optimus Prime can transform into a semi-trailer truck."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Bumblebee_%28Movie%29_figure.jpg/220px-Bumblebee_%28Movie%29_figure.jpg",
+      "name": "Bumblebee",
+      "price": 19.99,
+      "rating": 4.2,
+      "description": "Bumblebee is a loyal and courageous Autobot. He is a skilled warrior and a powerful ally. Bumblebee can transform into a yellow Volkswagen Beetle."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Megatron_%28Movie%29_figure.jpg/220px-Megatron_%28Movie%29_figure.jpg",
+      "name": "Megatron",
+      "price": 29.99,
+      "rating": 4.8,
+      "description": "Megatron is the leader of the Decepticons. He is a powerful and ruthless tyrant, and he will stop at nothing to achieve his goals. Megatron can transform into a Cybertronian jet."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Starscream_%28Movie%29_figure.jpg/220px-Starscream_%28Movie%29_figure.jpg",
+      "name": "Starscream",
+      "price": 22.99,
+      "rating": 4.6,
+      "description": "Starscream is Megatron's second-in-command. He is a skilled warrior and a cunning strategist. Starscream can transform into a Cybertronian jet."
+    },
+    {
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Ratchet_%28Movie%29_figure.jpg/220px-Ratchet_%28Movie%29_figure.jpg",
+      "name": "Ratchet",
+      "price": 17.99,
+      "rating": 4.3,
+      "description": "Ratchet is the Autobot medic. He is a skilled healer and a wise advisor. Ratchet can transform into an ambulance."
+    }
+  ]
+}

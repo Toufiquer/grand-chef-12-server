@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "John",
+      "picture": "https://randomuser.me/api/portraits/men/3.jpg",
+      "stars": 5,
+      "review": "The food was delicious and the service was excellent!"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+      "stars": 4,
+      "review": "I had a great time at this restaurant. The atmosphere was perfect and the food was amazing."
+    },
+    {
+      "id": 3,
+      "name": "Bob",
+      "picture": "https://randomuser.me/api/portraits/men/8.jpg",
+      "stars": 5,
+      "review": "I highly recommend this restaurant. The staff were friendly and the food was top-notch."
+    },
+    {
+      "id": 4,
+      "name": "Alice",
+      "picture": "https://randomuser.me/api/portraits/men/13.jpg",
+      "stars": 4,
+      "review": "I had a wonderful experience at this restaurant. The food was cooked to perfection and the service was outstanding."
+    },
+    {
+      "id": 5,
+      "name": "Tom",
+      "picture": "https://randomuser.me/api/portraits/men/31.jpg",
+      "stars": 5,
+      "review": "This restaurant exceeded my expectations. The food was fantastic and the staff were very attentive."
+    },
+    {
+      "id": 6,
+      "name": "Sara",
+      "picture": "https://randomuser.me/api/portraits/men/35.jpg",
+      "stars": 4,
+      "review": "I can't wait to come back to this restaurant. The food was incredible and the service was top-notch."
+    }
+  ]
+}
