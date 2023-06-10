@@ -18,7 +18,17 @@ async function run() {
     res.send({ message: "Server is running" });
   });
   app.get("/data", (req, res) => {
-    res.send({ data });
+    res.send({ data, review });
+  });
+
+  // Create an access token
+  app.post("/jwt", (req, res) => {
+    const email = req.body.email;
+    const data = { email };
+    const token = jwt.sign(data, process.env.TOKEN_SECRET, {
+      expiresIn: "1h",
+    });
+    res.send({ token });
   });
 }
 run().catch(console.dir);
