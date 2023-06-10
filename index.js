@@ -54,6 +54,16 @@ async function run() {
     result.token = token;
     res.send({ result });
   });
+
+  // get a user role by email
+  app.get("/users/:email", async (req, res) => {
+    const { email } = req.params;
+    // Query for a movie that has the title 'The Room'
+    const query = { email };
+    const options = {};
+    const result = await usersCollection.findOne(query, options);
+    res.send({ result });
+  });
 }
 run().catch(console.dir);
 
