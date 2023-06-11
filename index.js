@@ -66,6 +66,25 @@ async function run() {
     res.send({ result });
   });
 
+  // get all instructor
+  app.get("/instructors", async (req, res) => {
+    const query = { role: "instructor" };
+    const options = {};
+    const cursor = usersCollection.find(query, options);
+    const result = await cursor.toArray();
+    res.send(result);
+  });
+
+  // get a instructor by id
+  app.get("/instructors/:id", async (req, res) => {
+    const { id } = req.params;
+    // Query for a movie that has the title 'The Room'
+    const query = { _id: new ObjectId(id) };
+    const options = {};
+    const result = await usersCollection.findOne(query, options);
+    res.send(result);
+  });
+
   // get all user
   app.get("/users", async (req, res) => {
     const query = {};
