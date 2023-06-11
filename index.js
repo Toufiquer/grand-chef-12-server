@@ -86,8 +86,9 @@ async function run() {
 
   // update a user role
   app.put("/users/:id", async (req, res) => {
-    const {id} = req.params;
+    const { id } = req.params;
     const user = req.body;
+    delete user._id;
     // create a filter for a userCollection to update
     const filter = { _id: new ObjectId(id) };
     // this option instructs the method to create a document if no documents match the filter
@@ -100,6 +101,8 @@ async function run() {
     };
 
     const result = await usersCollection.updateOne(filter, updateDoc, options);
+    console.log(result, " => Line No: 91");
+
     res.send(result);
   });
 
