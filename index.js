@@ -28,6 +28,9 @@ client.connect();
 async function run() {
   // create a database
   const usersCollection = client.db("usersCollection").collection("users");
+  const classesCollection = client
+    .db("classesCollection")
+    .collection("classes");
   console.log("Node is running", " => Line No: 29");
 
   const findUserByEmail = async (email) => {
@@ -44,7 +47,7 @@ async function run() {
     res.send({ data, review });
   });
 
-  // Create an access token
+  // Create an access token  and save db if it is not exist
   app.post("/jwt", async (req, res) => {
     const email = req.body.email;
     const data = { email };
@@ -133,6 +136,29 @@ async function run() {
     const options = {};
     const result = await usersCollection.findOne(query, options);
     res.send({ result });
+  });
+
+  // Add Classes
+  app.post("/classes", async (req, res) => {
+    const classes = req.body;
+    const result = await classesCollection.insertOne(classes);
+    res.send(result);
+  });
+
+  // get all  Classes
+  app.get("/classes", async (req, res) => {
+    const query = {};
+    const options = {};
+    const cursor = classesCollection.find(query, options);
+    const result = await cursor.toArray();
+    res.send(result);
+  });
+
+  // Add Enrolled Classes
+  app.post("/enrolledClasses", async (req, res) => {
+    const data = req.body;
+    const result = await classesCollection.insertOne(data);
+    res.send(result);
   });
 }
 run().catch(console.dir);
