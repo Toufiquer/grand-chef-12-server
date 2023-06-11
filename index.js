@@ -30,6 +30,13 @@ async function run() {
   const usersCollection = client.db("usersCollection").collection("users");
   console.log("Node is running", " => Line No: 29");
 
+  const findUserByEmail = async (email) => {
+    const query = { email };
+    const options = {};
+    const result = await usersCollection.findOne(query, options);
+    return result;
+  };
+
   app.get("/", (req, res) => {
     res.send({ message: "Server is running" });
   });
@@ -45,14 +52,36 @@ async function run() {
       expiresIn: "1h",
     });
 
-    // save to database email and role
+    // save to database email and role if not Exist
     const user = {
       email,
       role: "student",
     };
-    const result = await usersCollection.insertOne(user);
+    let result = {};
+    const isExist = await findUserByEmail(email);
+    if (!isExist?.role) {
+      result = await usersCollection.insertOne(user);
+    }
     result.token = token;
     res.send({ result });
+  });
+
+  // get all user
+  app.get("/users", async (req, res) => {
+    const query = {};
+    const options = {};
+    const cursor = usersCollection.find(query, options);
+    const result = await cursor.toArray();
+    res.send(result);
+  });
+
+  // delete a user
+  app.delete("/users/:id", async (req, res) => {
+    const { id } = req.params;
+    console.log(id);
+    const filter = { _id: new ObjectId(id) };
+    const result = await usersCollection.deleteOne(filter);
+    res.send(result);
   });
 
   // get a user role by email
