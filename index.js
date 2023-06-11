@@ -84,6 +84,25 @@ async function run() {
     res.send(result);
   });
 
+  // update a user role
+  app.put("/users/:id", async (req, res) => {
+    const {id} = req.params;
+    const user = req.body;
+    // create a filter for a userCollection to update
+    const filter = { _id: new ObjectId(id) };
+    // this option instructs the method to create a document if no documents match the filter
+    const options = { upsert: true };
+    // create a document that sets the plot of the movie
+    const updateDoc = {
+      $set: {
+        ...user,
+      },
+    };
+
+    const result = await usersCollection.updateOne(filter, updateDoc, options);
+    res.send(result);
+  });
+
   // get a user role by email
   app.get("/users/:email", async (req, res) => {
     const { email } = req.params;
