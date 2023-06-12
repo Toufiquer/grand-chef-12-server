@@ -31,7 +31,9 @@ async function run() {
   const classesCollection = client
     .db("classesCollection")
     .collection("classes");
-  console.log("Node is running", " => Line No: 29");
+  const paymentsCollection = client
+    .db("paymentsCollection")
+    .collection("payments");
 
   const findUserByEmail = async (email) => {
     const query = { email };
@@ -81,7 +83,6 @@ async function run() {
   // get a instructor by id
   app.get("/instructors/:id", async (req, res) => {
     const { id } = req.params;
-    // Query for a movie that has the title 'The Room'
     const query = { _id: new ObjectId(id) };
     const options = {};
     const result = await usersCollection.findOne(query, options);
@@ -154,6 +155,16 @@ async function run() {
     res.send(result);
   });
 
+  // get a  Classes
+  app.get("/classes/:id", async (req, res) => {
+    const { id } = req.params;
+    const query = { _id: new ObjectId(id) };
+    const options = {};
+    const cursor = classesCollection.find(query, options);
+    const result = await cursor.toArray();
+    res.send(result);
+  });
+
   // Add Enrolled Classes
   app.post("/enrolledClasses", async (req, res) => {
     const data = req.body;
@@ -166,6 +177,22 @@ async function run() {
     const query = {};
     const options = {};
     const cursor = classesCollection.find(query, options);
+    const result = await cursor.toArray();
+    res.send(result);
+  });
+
+  // Add Enrolled Classes
+  app.post("/payments", async (req, res) => {
+    const data = req.body;
+    const result = await paymentsCollection.insertOne(data);
+    res.send(result);
+  });
+
+  // get Enrolled Classes
+  app.get("/payments", async (req, res) => {
+    const query = {};
+    const options = {};
+    const cursor = paymentsCollection.find(query, options);
     const result = await cursor.toArray();
     res.send(result);
   });
