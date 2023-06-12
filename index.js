@@ -136,7 +136,7 @@ async function run() {
     const query = { email };
     const options = {};
     const result = await usersCollection.findOne(query, options);
-    res.send({ result });
+    res.send( result );
   });
 
   // Add Classes
