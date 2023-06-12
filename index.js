@@ -160,6 +160,15 @@ async function run() {
     const result = await classesCollection.insertOne(data);
     res.send(result);
   });
+
+  // get Enrolled Classes
+  app.get("/enrolledClasses", async (req, res) => {
+    const query = {};
+    const options = {};
+    const cursor = classesCollection.find(query, options);
+    const result = await cursor.toArray();
+    res.send(result);
+  });
 }
 run().catch(console.dir);
 
